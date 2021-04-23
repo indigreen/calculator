@@ -1,7 +1,7 @@
 class Calculator {
     constructor(previousOperandTextElement, currentOperandTextElement) {
         this.previousOperandTextElement = previousOperandTextElement
-            this.currentOperandTextelement = currentOperandTextElement
+            this.currentOperandTextElement = currentOperandTextElement
         this.clear()
     }
   clear() {
@@ -93,7 +93,7 @@ class Calculator {
   }) 
   operationButtons.forEach(button => {
     button.addEventListener('click', () => {
-      calculator.chooseoperation(button.innerText)
+      calculator.chooseOperation(button.innerText)
       calculator.updateDisplay()
     })
   })
